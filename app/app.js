@@ -30,7 +30,7 @@ angular
   ])
   .run(function ($rootScope) {
     var web3 = new Web3();
-    var eth_node_url = "http://34.201.245.199:8545"; // TODO: remote URL
+    var eth_node_url = "http://3.83.164.62:8545"; // TODO: remote URL
     web3.setProvider(new web3.providers.HttpProvider(eth_node_url));
     $rootScope.web3 = web3;
     function sleepFor(sleepDuration) {
