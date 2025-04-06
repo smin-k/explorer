@@ -1,25 +1,33 @@
-# EthExplorer (In Progress)
+# 🌍 WorldLand Block Explorer
 
-![EthExplorer Screenshot](http://i.imgur.com/NHFYq0x.png)
+A lightweight block explorer for the [WorldLand](https://github.com/smin-k/WorldLand_BCAI) blockchain, based on the original Etherparty EthExplorer.  
+This fork adds support for ECCPoW, including LDPC `codeword`, `codeLength`, and extended metadata parsing.
 
-##License
+---
 
-GPL (see LICENSE)
+## 🧩 Features
 
-##Installation
+- Displays block, transaction, and address data
+- Shows ECCPoW-specific fields:
+  - `codeword` (both raw and decoded as binary string)
+  - `codelength`
+  - `extraData` decoding
+- Works in a local private network environment with [`WorldLand_BCAI`](https://github.com/smin-k/WorldLand_BCAI)
 
-Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git "Git installation") if you haven't already
+---
 
-Clone the repo
+## 📦 Installation
 
-`git clone https://github.com/etherparty/explorer`
+### 1. Prerequisites
 
-Download [Nodejs and npm](https://docs.npmjs.com/getting-started/installing-node "Nodejs install") if you don't have them
+- Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Install [Node.js & npm](https://nodejs.org/)
+- Install [Geth-compatible WorldLand client](https://github.com/smin-k/WorldLand_BCAI)
 
-Start the program. All dependencies will be automatically downloaded
+### 2. Clone and Start
 
-`npm start`
-
-Install [geth](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum "Geth install") if you don't already have it, then run the above command.
-
-Then refresh the page in your browser 
+```bash
+git clone https://github.com/smin-k/explorer
+cd explorer
+npm install
+npm start
